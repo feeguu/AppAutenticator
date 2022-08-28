@@ -3,6 +3,7 @@
     <string name="txtLogin">Login</string>
     <string name="txtSenha">Senha</string>
     <string name="txtLogar">Logar</string>
+    <string name="txtDeslogar">Deslogar</string>
     <string name="txtCadastrar">Registrar</string>
     <string name="txtMesssage">Usuário Logado com Sucesso</string>
 </resources>

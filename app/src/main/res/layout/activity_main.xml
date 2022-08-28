@@ -2,44 +2,73 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
-    android:orientation="vertical">
-
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
 
     <TextView
-        android:id="@+id/txtLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/txtLogin"
-        android:textSize="25dp"/>
-    <EditText
-        android:id="@+id/edtLogin"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25dp"/>
-    <TextView
-        android:id="@+id/txtSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/txtSenha"
-        android:textSize="25dp"/>
-    <EditText
-        android:id="@+id/edtSenha"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25dp"/>
-
-    <Button
-        android:id="@+id/btnLogar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtLogar"
         android:layout_gravity="center"
-        android:textSize="25dp"/>
+        android:text="@string/txtLogar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/edtLogin"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:hint="@string/txtLogin"
+            />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:hint="@string/txtSenha"/>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="70dp"
+
+            >
+            <Button
+                android:id="@+id/btnLogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txtLogar"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txtCadastrar"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>
