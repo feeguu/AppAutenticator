@@ -23,6 +23,7 @@
         android:orientation="vertical"
         android:layout_gravity="center">
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/edtLogin"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
         <EditText
             android:id="@+id/edtSenha"
             android:layout_width="300sp"
+            android:inputType="textPassword"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"

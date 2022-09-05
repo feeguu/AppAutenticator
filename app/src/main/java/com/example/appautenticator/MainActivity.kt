@@ -2,6 +2,7 @@ package com.example.appautenticator
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -40,9 +41,11 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
+
         if(currentUser != null){
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
+
         }
     }
 
@@ -65,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                         val intent = Intent(this, PrincipalActivity::class.java)
                         startActivity(intent)
                     } else {
-                        throw Exception("Falha no login")
+                        Toast.makeText(this, "Falha no login", Toast.LENGTH_SHORT).show()
                     }
                 }
 
